@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+:root {
+    --body_bg: rgba(34, 34, 34);
+}
+
+/* colors - end */
+
+/* commons */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--body_bg);
+}
+
+nav {
+    width: 100%;
+}
+.login-links {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
