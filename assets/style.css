@@ -2,6 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px dashed black;
+}
+
+.debug {
+    
+    .wrapper {
+        background-color: aqua;
+    }
+    header {
+        background-color: royalblue;
+        height: 6rem;
+    }
+    .header-top {
+        background-color: purple;
+        min-height: 50%; 
+    }
+    .header-bottom {
+        background-color: blueviolet;
+        height: 50%;
+    }
+    main {
+        height: 400px;
+    }
+    .main-left {
+        background-color: yellow;
+        height: 100%
+    }
+    .aside-right {
+        background-color: red;
+        height: 100%;
+    }
+    .card {
+        background-color: greenyellow;
+
+    }
+    .card-info {
+        background-color: green;
+    }
+    
 }
 
 /* colors */
@@ -19,11 +58,21 @@
 .justify-content-between {
     justify-content: space-between;
 }
+.align-items-center {
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* commons - end */
 
 body {
+    background-color: var(--body_bg);
+}
+.wrapper {
     height: 100vh;
     overflow: hidden;
-    background-color: var(--body_bg);
 }
 
 nav {
@@ -34,4 +83,26 @@ nav {
         text-decoration: none;
         color: white;
     }
+}
+
+.search {
+    padding-right: 3rem;
+}
+
+/* main */
+.main-left {
+    width: 65%;
+    img {
+        width: 100%;
+    }
+}
+
+.aside-right {
+    width: 35%;
+}
+.card {
+    width: calc(100% / 4);
+}
+.card-info {
+    height: 30% ;
 }
