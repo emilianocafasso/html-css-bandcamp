@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bandcamp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body class="dbug">
     
     <div class="wrapper">
         
-        <header>
+        <header class="top">
             <nav class="header-top d-flex justify-content-between align-items-center">
                 <div class="top-left d-flex">
-                    <img src="./assets/img/logo.jpeg" alt="">
-                    <input type="text" class="search" placeholder="Search and discover music">
+                    <img src="./assets/img/logo.jpeg" alt="" id="logo">
+                    <div class="search-box d-flex align-items-center ">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" class="search-box" placeholder="Search and discover music">
+                    </div>
                 </div>
                 <div class="login-links">
                     <a href="">Sign up</a>
                     <a href="">Log in</a>
                 </div>
             </nav>
-            <div class="header-bottom"></div>
+            <div class="header-bottom d-flex">
+                <div class="search-box d-flex align-items-center rounded">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" class="search-box rounded" placeholder="Add a genre, location, or tag">
+                </div>
+            </div>
         </header>
 
-        <main class="d-flex justify-content-between">
+        <main class="bottom d-flex justify-content-between">
             <div class="main-left d-flex wrap">
                 <!-- 1st card -->
                 <div class="card d-flex wrap justify-content-between">
