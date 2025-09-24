@@ -1,12 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border: 1px dashed black;
 }
 
 .debug {
     
+    * {
+    box-sizing: border-box;
+    border: 1px dashed black;
+    }
+
     .wrapper {
         background-color: aqua;
     }
@@ -75,9 +78,6 @@ body {
     overflow: hidden;
 }
 
-nav {
-    width: 100%;
-}
 .login-links {
     a {
         text-decoration: none;
@@ -92,6 +92,8 @@ nav {
 /* main */
 .main-left {
     width: 65%;
+    gap: 1rem;
+    overflow-y: auto;
     img {
         width: 100%;
     }
