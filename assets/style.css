@@ -78,6 +78,8 @@ a {
 }
 
 nav {
+    padding: 0.3rem 1rem;
+    width: 100%;
     justify-content: space-between;
 
     a {
@@ -86,14 +88,16 @@ nav {
 }
 
 .top {
-
+    padding: 0;
+    width: 100%;
     nav,
     nav .left,
     nav .right {
         display: flex;
         align-items: center;
         gap: 1rem;
-    }
+        margin-right: 2rem;
+    }               
 }
 
 .bottom {
@@ -152,7 +156,6 @@ input {
 
 .dark {
     background-color: var(--band-dark);
-    padding: 0.5rem 2rem;
 }
 
 .genres_filter {
@@ -278,4 +281,8 @@ input {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 744px) {
+    
 }
