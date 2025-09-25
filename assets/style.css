@@ -94,7 +94,7 @@ nav {
 }
 
 .top {
-    padding: 0;
+    padding: 0.5rem 0;
     width: 100%;
 
     nav,
@@ -103,6 +103,12 @@ nav {
         display: flex;
         align-items: center;
         gap: 1rem;
+    }
+
+    .left {
+        #logo-mobile {
+            display: none;
+        }
     }
 
     nav {
@@ -148,10 +154,10 @@ nav {
     }
 }
 
-
 input {
     outline: none;
     border: none;
+    display: block;
 }
 
 .search-box {
@@ -175,7 +181,6 @@ input {
 .genres_filter {
     border-radius: 1rem;
     padding: 0.3rem 6rem 0.3rem 1rem;
-    ;
     min-width: 300px;
     background-color: var(--band-dark-soft);
     border: 1px solid gray;
@@ -304,5 +309,46 @@ input {
     /* passo da 4 a 2 card per riga */
     .card {
         width: calc((100% - 3rem) / 2);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .top {
+        .left {
+            #logo {
+                display: none;
+            }
+            #logo-mobile { 
+                display: block;
+            }
+            width: 73%;
+            display: flex;
+            justify-content: space-between;
+
+            .search-box {
+                background-color: var(--band-darker);
+                min-width: 0;
+            }
+
+            input {
+                display: none;
+            }
+        }
+
+        .genres_filter {
+            width: 77%;
+        }
+    }
+
+    .bottom {
+        .left {
+            width: 100%;
+            ;
+        }
+
+        .right {
+            display: none;
+        }
     }
 }
