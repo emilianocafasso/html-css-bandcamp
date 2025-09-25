@@ -80,7 +80,13 @@ img {
 }
 
 a {
+    background: transparent;
+    padding: 0.5em;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 nav {
@@ -90,6 +96,10 @@ nav {
 
     a {
         color: var(--band-lighter);
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     }
 }
 
@@ -200,6 +210,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     width: calc((100% - 3rem) / 4);
+    padding-bottom: 0.8rem;
 
     img {
         border: 1px solid var(--band-dark-softer);
@@ -210,6 +221,7 @@ input {
         width: 100%;
         color: white;
         font-size: small;
+        padding-top: 0.4rem;
 
         .song-genre {
             color: var(--band-dark-softer);
@@ -319,9 +331,11 @@ input {
             #logo {
                 display: none;
             }
-            #logo-mobile { 
+
+            #logo-mobile {
                 display: block;
             }
+
             width: 73%;
             display: flex;
             justify-content: space-between;
