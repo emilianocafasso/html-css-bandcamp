@@ -216,6 +216,7 @@ input {
             display: flex;
             gap: 0.5rem;
             max-width: 100%;
+
             listening-text {
                 max-width: 80%;
                 display: flex;
@@ -242,10 +243,12 @@ input {
         .black {
             background-color: var(--band-dark);
             border: 1px solid white;
+
             a {
                 color: white;
             }
         }
+
         .more-info {
             margin-top: 0.5rem;
             width: 95%;
@@ -255,10 +258,12 @@ input {
             display: flex;
             align-items: center;
             gap: 0.5rem;
+
             .author-profile-picture {
                 width: 20%;
                 border: none;
             }
+
             .author-info-text {
                 max-width: 80%;
                 display: flex;
@@ -267,7 +272,6 @@ input {
         }
     }
 }
-
 
 .truncate {
     white-space: nowrap;
