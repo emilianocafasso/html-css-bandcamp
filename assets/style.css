@@ -160,7 +160,7 @@ input {
 
 .genres_filter {
     border-radius: 1rem;
-    padding: 0.3rem;
+    padding: 0.3rem 8rem 0.3rem 1rem;;
     min-width: 300px;
     background-color: var(--band-dark-soft);
     border: 1px solid var(--band-dark-softer);
@@ -285,4 +285,9 @@ input {
 
 @media screen and (max-width: 744px) {
     
+    /* passo da 4 a 2 card per riga */
+    .card {
+    width: calc((100% - 3rem) / 2);
+    }
+
 }
