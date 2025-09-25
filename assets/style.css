@@ -196,24 +196,28 @@ input {
 .card_big {
     color: white;
     padding: 0 1rem;
+
     img {
         border: 1px solid var(--band-dark-softer);
     }
 
     .card-info {
         padding-top: 1rem;
+        gap: 1rem;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        
+
         .play-icon {
             font-size: 300%;
             width: auto;
         }
+
         .listening {
             display: flex;
             width: 100%;
             gap: 1rem;
+
             listening-text {
                 display: flex;
                 flex-direction: column;
@@ -223,12 +227,33 @@ input {
                 width: 100%;
             }
         }
-        .buttons {
+
+        .btn {
+            border-radius: 5px;
+            border: 1px solid white;
             width: 100%;
-            margin-top: 1rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .white {
+            background-color: white;
+
+            a {
+                color: black;
+            }
+        }
+
+        .black {
+            background-color: var(--band-dark);
+            border: 1px solid white;
+            a {
+                color: white;
+            }
         }
     }
 }
+
 
 .truncate {
     white-space: nowrap;
