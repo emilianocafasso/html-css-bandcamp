@@ -49,8 +49,13 @@
 /* colors - end */
 
 /* commons */
+
 .d-flex {
     display: flex;
+}
+
+.space-around {
+    justify-content: space-around;
 }
 
 .align-items-center {
@@ -119,7 +124,6 @@ nav {
         border-right: 1px solid var(--band-dark-softer);
 
         .album {
-            gap: 1rem;
             display: flex;
             flex-wrap: wrap;
         }
