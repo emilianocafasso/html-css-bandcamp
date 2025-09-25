@@ -211,9 +211,35 @@ input {
     flex-wrap: wrap;
     width: calc((100% - 3rem) / 4);
     padding-bottom: 0.8rem;
-
-    img {
+    
+    .card-top {
+        position: relative;
+        .play-icon {
+            font-size: 20px;
+            color: var(--band-dark);
+            background-color: white;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: 85%;
+            left: 2%;
+            display: none;
+        }    
+    }
+    
+    .card-top {
         border: 1px solid var(--band-dark-softer);
+        &:hover {
+            .play-icon {
+                display: block;
+            }
+        }
+        .play-icon {
+            &:hover {
+                opacity: 60%;
+            }
+        }
     }
 
     .card-info {
@@ -227,6 +253,7 @@ input {
             color: var(--band-dark-softer);
         }
     }
+
 }
 
 .card_big {
