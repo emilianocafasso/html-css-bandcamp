@@ -43,7 +43,7 @@
     --band-dark-soft: #3c3c3c;
     --band-dark-softer: #464646;
     --band-lighter: white;
-    --band-gray: gray;  
+    --band-gray: gray;
 }
 
 /* colors - end */
@@ -96,14 +96,22 @@ nav {
 .top {
     padding: 0;
     width: 100%;
+
     nav,
     nav .left,
     nav .right {
         display: flex;
         align-items: center;
         gap: 1rem;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .right {
         margin-right: 2rem;
-    }               
+    }
 }
 
 .bottom {
@@ -150,7 +158,7 @@ input {
     background-color: var(--band-dark-softer);
     border-radius: 4px;
     font-size: 1rem;
-    min-width: 300px;
+    min-width: 265px;
     padding: 0.3rem 0.8rem;
 
     input {
@@ -166,7 +174,8 @@ input {
 
 .genres_filter {
     border-radius: 1rem;
-    padding: 0.3rem 8rem 0.3rem 1rem;;
+    padding: 0.3rem 6rem 0.3rem 1rem;
+    ;
     min-width: 300px;
     background-color: var(--band-dark-soft);
     border: 1px solid gray;
@@ -291,10 +300,9 @@ input {
 }
 
 @media screen and (max-width: 744px) {
-    
+
     /* passo da 4 a 2 card per riga */
     .card {
-    width: calc((100% - 3rem) / 2);
+        width: calc((100% - 3rem) / 2);
     }
-
 }
