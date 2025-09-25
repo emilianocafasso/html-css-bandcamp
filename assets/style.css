@@ -12,7 +12,7 @@
 
     .top {
         background-color: royalblue;
-        height: 6rem;
+        height: 3rem;
     }
 
     .left {
@@ -37,7 +37,7 @@
 
 /* colors */
 :root {
-    --band-top-height: 112px;
+    --band-top-height: 100px;
     --band-darker: #222222;
     --band-dark: #2b2b2b;
     --band-dark-soft: #3c3c3c;
@@ -50,10 +50,6 @@
 /* commons */
 .d-flex {
     display: flex;
-}
-
-.justify-content-between {
-    justify-content: space-between;
 }
 
 .align-items-center {
@@ -70,6 +66,7 @@ body {
     background-color: var(--band-darker);
     padding: 0;
     height: 100vh;
+    overflow: hidden;
 }
 
 img {
@@ -81,14 +78,14 @@ a {
 }
 
 nav {
+    justify-content: space-between;
+    height: ;
     a {
         color: var(--band-lighter);
     }
 }
 
 .top {
-    height: var(--band-top-height);
-    
     nav, nav .left, nav .right {
         display: flex;
         align-items: center;
@@ -99,7 +96,8 @@ nav {
 .bottom {
     height: calc(100% - var(--band-top-height));
     display: flex;
-
+    padding: 1rem 0;
+    
     .left,
     .right {
         height: 100%;
@@ -107,8 +105,15 @@ nav {
 
     .left {
         width: 70%;
-        ;
         overflow-y: auto;
+        scrollbar-width: thin;
+        padding: 0 1rem;
+        border-right: 1px solid var(--band-dark-softer);
+        .album {
+            gap: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     .right {
@@ -116,9 +121,6 @@ nav {
     }
 }
 
-.container {
-    padding: 1rem;
-}
 
 input {
     outline: none;
@@ -126,26 +128,54 @@ input {
 }
 
 .search-box {
+    background-color: var(--band-dark-softer);
     border-radius: 4px;
     font-size: 1rem;
-    padding-right: 2rem;
-    padding-left: 1rem;
-    background-color: var(--search_box-gray);
+    min-width: 300px;
+    padding: 0.3rem 0.8rem;
+    input {
+        background-color: var(--band-dark-softer);
+        padding-left: 1rem; 
+    }
 }
-
+.dark {
+    background-color: var(--band-dark);
+    padding: 0.5rem 2rem;
+}
+.genres_filter {
+    border-radius: 1rem;
+    padding: 0.3rem;
+    min-width: 300px;
+    background-color: var(--band-dark-soft);
+    border: 1px solid var(--band-dark-softer);  
+    input {
+    background-color: var(--band-dark-soft);
+    padding-left: 1rem;
+    }
+}
 .search-icon {
     color: grey;
 }
 
-.rounded {
-    border-radius: 30px;
-}
-
-
 .card {
-    width: calc(100% / 4);
-}
+    width: calc((100% - 3rem) / 4);
+    
+    .card-info {
+        height: 30%;
+        width: 100%;
+        color: white;
+        font-size: small;
 
-.card-info {
-    height: 30%;
+        .truncate {
+        white-space: nowrap;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+        .song-genre {
+            color: var(--band-dark-softer);
+        }
+    }
+
 }
