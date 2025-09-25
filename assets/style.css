@@ -43,6 +43,7 @@
     --band-dark-soft: #3c3c3c;
     --band-dark-softer: #464646;
     --band-lighter: white;
+    --band-gray: gray;  
 }
 
 /* colors - end */
@@ -151,6 +152,7 @@ input {
     input {
         background-color: var(--band-dark-softer);
         padding-left: 1rem;
+        color: gray;
     }
 }
 
@@ -163,11 +165,12 @@ input {
     padding: 0.3rem 8rem 0.3rem 1rem;;
     min-width: 300px;
     background-color: var(--band-dark-soft);
-    border: 1px solid var(--band-dark-softer);
+    border: 1px solid gray;
 
     input {
         background-color: var(--band-dark-soft);
         padding-left: 1rem;
+        color: gray;
     }
 }
 
