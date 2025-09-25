@@ -79,7 +79,6 @@ a {
 
 nav {
     justify-content: space-between;
-    height: ;
     a {
         color: var(--band-lighter);
     }
@@ -118,6 +117,11 @@ nav {
 
     .right {
         width: 30%;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        .selected-card {
+            padding: 0 0.5rem;
+        }
     }
 }
 
@@ -158,8 +162,12 @@ input {
 }
 
 .card {
+    display: flex;
+    flex-wrap: wrap;
     width: calc((100% - 3rem) / 4);
-    
+    img {
+        border: 1px solid var(--band-dark-softer);
+    }
     .card-info {
         height: 30%;
         width: 100%;
@@ -177,5 +185,19 @@ input {
             color: var(--band-dark-softer);
         }
     }
+}
 
+.card_big {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        border: 1px solid var(--band-dark-softer);
+    }
+    .card-info {
+        padding-top: 1rem;
+        .play-icon {
+            color: white;
+            font-size: 40px;
+        }
+    }
 }
